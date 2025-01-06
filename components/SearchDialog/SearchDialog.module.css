@@ -1,0 +1,124 @@
+:root {
+    --primary-bg: #ffffff;
+    --secondary-bg: #f0f0f0;
+    --overlay-bg: rgba(0, 0, 0, 0.5);
+    --primary-text: #333;
+    --secondary-text: #666;
+    --border-color: #ddd;
+    --hover-shadow: rgba(0, 0, 0, 0.1);
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .dialog {
+    background: var(--primary-bg);
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px var(--hover-shadow);
+    position: relative;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--primary-text);
+  }
+  
+  .closeButton {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: var(--secondary-text);
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .closeButton:hover {
+    color: var(--primary-text);
+  }
+  
+  .searchInput {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .loading {
+    font-size: 14px;
+    color: var(--secondary-text);
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .results {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    background: var(--secondary-bg);
+    box-shadow: 0 2px 5px var(--hover-shadow);
+  }
+  
+  .cardImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .cardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .cardTitle {
+    font-size: 14px;
+    margin: 0;
+    color: var(--primary-text);
+  }
+  
+  .cardArtist {
+    font-size: 12px;
+    margin: 0;
+    color: var(--secondary-text);
+  }
+  

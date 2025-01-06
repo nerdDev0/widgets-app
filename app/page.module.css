@@ -1,0 +1,107 @@
+.container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.weatherInfo {
+  margin-top: 20px;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialogContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input {
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dialogButton {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dialogButton:hover {
+  background: #0056b3;
+}
+
+
+.suggestionsList {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+}
+
+.suggestionItem {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestionItem:hover {
+  background: #f0f0f0;
+}
+
+
+.suggestionsList {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+}
+
+.suggestionItem {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestionItem:hover {
+  background: #f0f0f0;
+}
